@@ -1,8 +1,30 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.bottom-nav {
+    height: 53px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
-a {
-  color: #00B7FF;
+.center-container {
+    padding: 44px 0 53px 0;
+}
+
+.top-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item {
+    padding-top: 1px;
+}
+
+.product-item-info {
+    height: 50px;
 }

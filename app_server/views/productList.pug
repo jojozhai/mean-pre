@@ -1,4 +1,79 @@
 extends layout
 
 block content
-  a(href='product/1') 商品详情页
+    .top-nav
+        .weui-search-bar#search_bar
+            form.weui-search-bar__form
+                .weui-search-bar__box
+                    i.weui-icon-search
+                    input#search_input.weui-search-bar__input(type='search', placeholder='搜索')
+                    a#search_clear.weui-icon-clear(href='javascript:;')
+                label#search_text.weui-search-bar__label
+                    i.weui-icon-search
+                    span 搜索
+            a#search_cancel.weui-search-bar__cancel-btn(href='javascript:;') 取消
+
+    .center-container
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    img.img-responsive(src='http://placehold.it/400x200')
+                .swiper-slide
+                    img.img-responsive(src='http://placehold.it/400x200')
+                .swiper-slide
+                    img.img-responsive(src='http://placehold.it/400x200')
+            .swiper-pagination
+
+        .product-item
+            img.img-responsive(src='http://placehold.it/400x200')
+            .weui-cell
+                .weui-cell__bd
+                    p 这是一个牛逼的商品1
+                .weui-cell__ft
+                    span.weui-badge 199.00
+        .product-item
+            img.img-responsive(src='http://placehold.it/400x200')
+            .weui-cell
+                .weui-cell__bd
+                    p 这是一个牛逼的商品2
+                .weui-cell__ft
+                    span.weui-badge 299.00
+        .product-item
+            img.img-responsive(src='http://placehold.it/400x200')
+            .weui-cell
+                .weui-cell__bd
+                    p 这是一个牛逼的商品3
+                .weui-cell__ft
+                    span.weui-badge 399.00
+        .product-item
+            img.img-responsive(src='http://placehold.it/400x200')
+            .weui-cell
+                .weui-cell__bd
+                    p 这是一个牛逼的商品4
+                .weui-cell__ft
+                    span.weui-badge 499.00
+        .product-item
+            img.img-responsive(src='http://placehold.it/400x200')
+            .weui-cell
+                .weui-cell__bd
+                    p 这是一个牛逼的商品5
+                .weui-cell__ft
+                    span.weui-badge 599.00
+
+    .bottom-nav
+        .weui-tab
+            .weui-tab__panel
+            .weui-tabbar
+                a.weui-tabbar__item.weui-bar__item_on(href='javascript:;')
+                    img.weui-tabbar__icon(src='http://placehold.it/24x24')
+                    p.weui-tabbar__label 首页
+                a.weui-tabbar__item(href='javascript:;')
+                    img.weui-tabbar__icon(src='http://placehold.it/24x24')
+                    p.weui-tabbar__label 购物车
+                a.weui-tabbar__item(href='javascript:;')
+                    img.weui-tabbar__icon(src='http://placehold.it/24x24')
+                    p.weui-tabbar__label 订单
+                a.weui-tabbar__item(href='javascript:;')
+                    img.weui-tabbar__icon(src='http://placehold.it/24x24')
+                    p.weui-tabbar__label 我
+    script(src='/javascripts/app/productList.js')
