@@ -1,4 +1,69 @@
 extends layout
 
 block content
-  a(href='/cart') 购物车
+    .top-nav
+        .weui-cell
+            .weui-cell__hd
+                a(href='/')
+                    img(src='http://placehold.it/30x30')
+    .center-container
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    img.img-responsive(src='http://placehold.it/400x200')
+                .swiper-slide
+                    img.img-responsive(src='http://placehold.it/400x200')
+                .swiper-slide
+                    img.img-responsive(src='http://placehold.it/400x200')
+            .swiper-pagination
+
+        .weui-cell
+            .weui-cell__bd
+                p 这是一个牛逼的商品4
+            .weui-cell__ft
+                span.weui-badge 299.00
+
+        .page.flex
+            .page__bd.page__bd_spacing
+                .weui-flex
+                    .weui-flex__item
+                        p(style='margin:0 20px; color:green; font-size:0.8em') 颜色
+                .weui-flex
+                    .weui-flex__item
+                        .specification
+                            a.weui-btn.weui-btn_mini.weui-btn_primary(style='width: 100%;') 红色
+                    .weui-flex__item
+                        .specification
+                            a.weui-btn.weui-btn_mini.weui-btn_plain-primary(style='width: 100%;') 橙色
+                    .weui-flex__item
+                        .specification
+                            a.weui-btn.weui-btn_mini.weui-btn_plain-primary(style='width: 100%;') 黄色
+                .weui-flex
+                    .weui-flex__item
+                        .specification
+                            a.weui-btn.weui-btn_mini.weui-btn_plain-primary(style='width: 100%;') 绿色
+                    .weui-flex__item
+                        .specification
+                            a.weui-btn.weui-btn_mini.weui-btn_plain-primary(style='width: 100%;') 青色
+                    .weui-flex__item
+                        .specification
+                            a.weui-btn.weui-btn_mini.weui-btn_plain-primary(style='width: 100%;') 蓝色
+
+        .weui-tab
+            .weui-navbar
+                #productInfoTab.weui-navbar__item.weui-bar__item_on 商品信息
+                #serviceInfoTab.weui-navbar__item 售后说明
+            .weui-tab__panel
+                div#productInfo
+                    img.img-responsive(src='http://placehold.it/400x600')
+                div#serviceInfo(style='display:none')
+                    |售后说明
+
+    .bottom-nav(style='background:white')
+        .weui-cell
+            .weui-cell__hd(style="position: relative;margin-right: 10px;")
+                img(src='http://placehold.it/40x40')
+                span.weui-badge(style="position: absolute;top: -.4em;right: -.4em;") 8
+            .weui-cell__bd
+                a.weui-btn.weui-btn_mini.weui-btn_plain-primary(style='width:100%') 加入购物车
+    script(src='/javascripts/app/productDetail.js')
